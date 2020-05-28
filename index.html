@@ -357,6 +357,29 @@
       font-weight: bold;
   } 
 
+	     
+/* *********************************************	      */
+	     
+/* The overlay effect - lays on top of the container and over the image */
+.overlayx {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlayx {
+  opacity: 1;
+}
 
 
     </style>
@@ -934,28 +957,28 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="images/gal4.jpg" class="d-block w-100" alt="MCA">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-none d-md-block overlayx">
                   <h5>Himalayas!</h5>
                   <p>Go where you feel most alive with beautiful adventure.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="images/mnnit.JPG" class="d-block w-100" alt="Himalayas">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-none d-md-block overlayx">
                   <h5>Prize Ceremony</h5>
                   <p></p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="images/prayag.jpg" class="d-block w-100" alt="Himalayas">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-none d-md-block overlayx">
                   <h5>Sangam!</h5>
                   <p>May be they call it Triveni Sangam for the beauty in unity.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="images/gal2.jpg" class="d-block w-100" alt="lecture">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-none d-md-block overlayx">
                   <h5>Class Lecture !</h5>
                   <p></p>
                 </div>
